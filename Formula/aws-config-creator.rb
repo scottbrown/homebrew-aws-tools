@@ -12,7 +12,7 @@ class AwsConfigCreator < Formula
   version VERSION
 
   def self.prefix
-    "#{REPO}/releases/download/v#{VERSION}/#{PACKAGE}_#{VERSION}"
+    "#{REPO}/releases/download/v#{VERSION}/#{PACKAGE}_v#{VERSION}"
   end
 
   on_macos do
