@@ -11,7 +11,7 @@ class AwsConfigCreator < Formula
   license 'MIT'
   version VERSION
 
-  def prefix
+  def self.prefix
     "#{REPO}/releases/download/#{VERSION}/#{PACKAGE}_#{VERSION}"
   end
 
