@@ -6,7 +6,7 @@ REPO = "https://github.com/scottbrown/#{PACKAGE}"
 
 # Homebrew formula
 class DumpCft < Formula
-  desc 'Command line tool to automatically generate a .aws/config file based on AWS SSO rules in your org.'
+  desc 'Dumps the templates of all CloudFormation stacks in one or more regions.'
   homepage REPO
   license 'MIT'
   version VERSION
