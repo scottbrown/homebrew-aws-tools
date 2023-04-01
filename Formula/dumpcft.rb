@@ -5,7 +5,7 @@ PACKAGE = 'dumpcft'
 REPO = "https://github.com/scottbrown/#{PACKAGE}"
 
 # Homebrew formula
-class DumpCft < Formula
+class Dumpcft < Formula
   desc 'Dumps the templates of all CloudFormation stacks in one or more regions.'
   homepage REPO
   license 'MIT'
