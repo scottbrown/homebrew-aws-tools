@@ -2,15 +2,15 @@ VERSION = '1.0.2'
 PACKAGE = 'aws-config-creator'
 REPO = "https://github.com/scottbrown/#{PACKAGE}"
 
-def prefix
-  "#{REPO}/releases/download/#{VERSION}/#{PACKAGE}_#{VERSION}"
-end
-
 class AwsConfigCreator < Formula
   desc 'Command line tool to automatically generate a .aws/config file based on AWS SSO rules in your org.'
   homepage REPO
   license 'MIT'
   version VERSION
+
+  def prefix
+    "#{REPO}/releases/download/#{VERSION}/#{PACKAGE}_#{VERSION}"
+  end
 
   on_macos do
     if Hardware::CPU.arm?
