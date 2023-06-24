@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-VERSION = '0.0.5'
+VERSION = '0.0.6'
 PACKAGE = 'dumpcft'
 REPO = "https://github.com/scottbrown/#{PACKAGE}"
 
@@ -18,20 +18,20 @@ class Dumpcft < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "#{prefix}_darwin_arm64.tar.gz"
-      sha256 '9f92c0ff95fca39ccb367eb51f350cf4486842c277b6c6286c70e19f61c09584'
+      sha256 'd64943a79140035a42e48d9cb60fd541503e611f54f874383706a37e10bd8547'
     else
       url "#{prefix}_darwin_amd64.tar.gz"
-      sha256 '0620c13837534b0173d07455cd2ab024d6ce753920e6d721f34641a31b089305'
+      sha256 'cfb4c20af529c72ce0f7ebe37749c07ab633ffeb7bfd7c4693740f30cb835903'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "#{prefix}_linux_arm64.tar.gz"
-      sha256 'cb50f326f1221d042d563771c72b48c18a49c60244ec812fa44083b1f409ecf5'
+      sha256 'a0d594baca8c3e1f5da1c79bd80e3aa96eb926ae9ff7a76bc65f96b89d3df8ae'
     else
       url "#{prefix}_linux_amd64.tar.gz"
-      sha256 '44fd4ff37548a9fe95a4a88c7db33841c98b57c634e0c451e34e47355301b055'
+      sha256 'bb03a8ce77fc6ef18883c682d7b091b5669deb3e899b82f33d55bc6424c2cd0d'
     end
   end
 
